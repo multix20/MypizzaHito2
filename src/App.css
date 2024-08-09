@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.navbar {
+  border-radius: 10px; /* Aplica el borde redondeado */
+  overflow: hidden; /* Asegura que el contenido respete el border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para resaltar el Navbar */
+}
+
+.navbar .navbar-brand, .navbar .btn {
+  border-radius: 10px; /* Redondea los botones y el branding dentro del Navbar */
+}
+
+.card {
+  border: 10px solid #332f2f;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-ingredients {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.btn {
+  margin: 5px;
+  width: 100px; /* Añade un ancho fijo a los botones para alinearlos */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

@@ -1,0 +1,41 @@
+.header {
+    background-image: url('/public/Pizza.jpeg'); /* Actualiza esta ruta con la correcta */
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Ajusta según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px; /* Añade bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido respete el border-radius */
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 1;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
